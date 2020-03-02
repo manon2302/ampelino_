@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Domaine italie</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+
+	<script>
+	
+	//on attend la fin du chargement du contenu de la page
+	$(function(){
+
+		//on utilise la fonction de pop-in
+		//alert('Hello world !');
+
+		//on cree l'action à faire lors d'un clic sur le #burger
+		$('#burger').click(function(){
+
+			//on cible la balise body et on lui ajoute la classe 'navOpen'
+			$('body').addClass('navOpen');
+
+		});//fin du click #burger
+
+
+		$('#close').click(function(){
+			$('body').removeClass('navOpen');
+		});
+
+	//fin du chargement
+	});
+	</script>
+	<!-- L'image de onf à mettre directement dans le css -->
+</head>
+</html>
+<body>
+	<header>
+		
+			<figure>
+					<img class="logo" src="asset/img/logo_ampelino.png" alt="logo">
+			</figure>
+
+		<!-- Menu en haut à revoir avec le truc en php int etc-->	
+		<button id="book">Télécharger Book </button>
+		<button id="burger" class="fas fa-bars">Menu</button>
+
+		<nav>
+			<button id="close" class="fas fa-times">Close</button>
+			<ul>
+				<li><a href="index.html">Qui sommes nous</a></li>
+				<li><a href="#">Nos vin/spiritueux</a></li>
+				<li><a href="generic.html">contact</a></li>				
+			</ul>
+			
+		</nav>
+
+	</header>
+
+		<ul class="pays">
+			<li><a href="domaine_france.html">France</a></li>
+			<li><a href="domaine_italie.html">Italie</a></li>
+			<li><a href="domaine_espagne.html">Espagne</a></li>				
+		</ul>
+
+		<ul class="domaines">
+			<li><a href="#">Guila Negri</a></li>
+			<li><a href="#">Marco Mosconi</a></li>
+			<li><a href="#">Prapian</a></li>
+			<li><a href="#">Noelia Ricci</a></li>
+			<li><a href="#">Poggio la noce</a></li>
+			<li><a href="#">Tenuta di Carleone</a></li>
+			<li><a href="#">Antonio de Camillo</a></li>
+		</ul>
+		<!-- Image pour illustrer région italie du domaine-->	
+		<img src="asset/img">
+
+		<h2 class="nom_region"> Nom région</h2>
+		<p class="résumé">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<button id="voir">Voir les vins du domaines</button>
+
+
+
+	<footer>
+		
+
+		
+	</footer>
+</body>
+</html>

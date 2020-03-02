@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mineur Majeur</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="asset/css/reset.css">
+    <link rel="stylesheet" href="asset/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/main.css">
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+
+    <script>
+
+        //on attend la fin du chargement du contenu de la page
+        $(function () {
+
+
+
+
+            //fin du chargement
+        });
+    </script>
+    <!-- -->
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img class="logo" src="asset/img/logo_ampelino.png" alt="logo">
+        </figure>
+    </header>
+
+
+    <h1>
+        Avez-vous plus de 18 ans pour accéder au site internet ?
+    </h1>
+
+    <div id="old-enough">
+        <p>OUI</p>
+        <div id="background-rectangle">
+            <div id="circle-selector"></div>
+        </div>
+        <p>NON</p>
+    </div>
+    <!-- <p class="oui">OUI</p>
+    <p class="non">NON</p>
+    <div class="background-rectangle">
+    </div> -->
+    <!-- <button>
+        <figure>
+            <a href="index.html">
+                <img class="arrow" src="asset/img/mineur_arrow.png" alt="rectangle arrondi">
+            </a>
+        </figure>
+    </button>
+    <figure>
+        <img class="rectangle" src="asset/img/mineur_blanc.png" alt="rectangle arrondi">
+    </figure> -->
+    <script>
+        const circleSelector = document.getElementById('circle-selector');
+        circleSelector.addEventListener('click', () => {
+            circleSelector.classList.add('animated-circle');
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

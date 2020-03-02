@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Qui sommes nous</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="asset/css/reset.css">
+    <link rel="stylesheet" href="asset/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/main.css">
+
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+
+	<script>
+	
+	//on attend la fin du chargement du contenu de la page
+	$(function(){
+
+		//on utilise la fonction de pop-in
+		//alert('Hello world !');
+
+		//on cree l'action à faire lors d'un clic sur le #burger
+		$('#burger').click(function(){
+
+			//on cible la balise body et on lui ajoute la classe 'navOpen'
+			$('body').addClass('navOpen');
+
+		});//fin du click #burger
+
+
+		$('#close').click(function(){
+			$('body').removeClass('navOpen');
+		});
+
+	//fin du chargement
+	});
+	</script>
+	<!-- L'image de fond à mettre directement dans le css -->
+</head>
+</html>
+<body>
+	<header>
+
+<div class="nav">
+
+	<img class="logo" src="img/logo_ampelino.png" alt="logo">
+    <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Télécharger book</a></li>
+    </ul>
+</div>
+
+<!---	<figure>
+				<img class="logo" src="img/logo_ampelino.png" alt="logo">
+		</figure>
+
+		Menu en haut à revoir avec le truc en php int etc	
+		<button id="book">Télécharger Book</button <iframe src="file:///C:/Users/julie/OneDrive/Documents/Ampelino/data/BookAmpelinoParis.pdf"> 
+		<button id="burger" class="fas fa-bars">Menu</button>
+-->
+
+	</header>
+	<div class="quisommesnous"> 
+		<h1>Qui sommes nous ?</h1>
+		<p>
+	Ampelinus, a, um (adj.) Qui se rapporte à la vigne.
+	Ampelino raconte la terre, le vignoble, les saisons. La science des cépages - les variétés de raisins - conte aussi celle de la nature, ses dons et ses beautés.
+	J’ai créé Ampelino au tournant de l’année 2020, après vingt-cinq ans d’un parcours riche et varié de directeur commercial pour différentes sociétés. La dernière de mon parcours, le Champagne Louis Roederer, m’a donné ce goût du vin et de ses récits. Avec le souci de m’inscrire dans des préoccupations environnementales qui me sont chères, j’ai souhaité me tourner en priorité vers des domaines en culture biologique ou biodynamique, ou guidés par ces principes de respect de l’environnement, et représenter cette fraction exigeante et passionnante de la viticulture française et européenne avec, vous le verrez, un fort accent mis sur l’Italie et l’Espagne, deux pays qui m’inspirent et me réjouissent. Egalement, vous découvrirez une gamme courte et pointue de spiritueux innovants, à la pointe de la nouvelle vague de la mixologie contemporaine.</p>
+	</div>
+
+<div class="rectangle_rouge">
+</div>
+
+<img id="olive" src="C:/Users/julie/OneDrive/Documents/Ampelino/img/olivier.png">
+
+
+	<footer>
+		<p>L'abus d'alcool est dangeureux pour la santé à consommer avec modération </p>		
+	</footer>
+</body>
+</html>
